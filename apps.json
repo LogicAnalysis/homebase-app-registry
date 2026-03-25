@@ -10,6 +10,7 @@
 		"https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/immich/hwaccel.ml.yml",
 		"https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/immich/hwaccel.transcoding.yml"
 	],
+	"port": 2283,
 	"currentVersion": "v2.6.1"
   }
 ]
