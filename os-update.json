@@ -1,5 +1,5 @@
 {
-  "latestVersion": "0.3.7",
-  "bundleUrl": "https://github.com/LogicAnalysis/homebase-app-registry/raw/refs/heads/main/updates/homebase-update-0.3.7.raucb",  
-  "releaseNotes": "- Better dark mode support\n- Setup for future translation support\n-Fixed app install issues"
+  "latestVersion": "0.4.0",
+  "bundleUrl": "https://github.com/LogicAnalysis/homebase-app-registry/raw/refs/heads/main/updates/homebase-update-0.4.0.raucb",  
+  "releaseNotes": "- Better dark mode support\n- Setup for future translation support\n-Fixed app install issues\n-Complete OS refactor"
 }
