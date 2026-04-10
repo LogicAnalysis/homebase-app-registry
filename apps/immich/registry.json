@@ -1,5 +1,6 @@
 {
 	"id": "immich",
 	"name": "Immich",
-	"release": "2.6.1"
+	"release": "2.6.1",
+	"description": "View and manage your photo library"
 }

@@ -3,8 +3,10 @@
     "id": "immich",
     "name": "Immich",
     "description": "Personal photo/video cloud",
-    "iconUrl": "https://raw.githubusercontent.com/immich-app/immich/refs/heads/main/design/immich-logo-stacked-light.svg",
-    "composeUrl": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/immich/docker-compose.yml",
+    "iconUrls": {
+		"main": "https://raw.githubusercontent.com/immich-app/immich/refs/heads/main/design/immich-logo-stacked-light.svg"
+	},
+	"composeUrl": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/immich/docker-compose.yml",
 	"extraFiles": [
 		"https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/immich/.env",
 		"https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/immich/hwaccel.ml.yml",
