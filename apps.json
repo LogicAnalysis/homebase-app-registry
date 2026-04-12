@@ -6,7 +6,7 @@
     "iconUrls": {
 		"main": "https://raw.githubusercontent.com/immich-app/immich/refs/heads/main/design/immich-logo-stacked-light.svg"
 	},
-	"registry": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/immich/registry.json",
+	"manifest": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/immich/manifest.json",
 	"currentRelease": "v2.6.1",
 	"storePage": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/immich/store.html"
   }
