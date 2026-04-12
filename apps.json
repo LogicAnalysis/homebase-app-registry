@@ -3,7 +3,7 @@
     "id": "immich",
     "name": "Immich",
     "description": "Personal photo/video cloud",
-    "iconUrls": {
+    "iconURLs": {
 		"main": "https://raw.githubusercontent.com/immich-app/immich/refs/heads/main/design/immich-logo-stacked-light.svg"
 	},
 	"manifest": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/immich/manifest.json",
