@@ -1,13 +1,24 @@
 [
-  {
-    "id": "immich",
-    "name": "Immich",
-    "description": "Personal photo/video cloud",
-    "iconURLs": {
-		"main": "https://raw.githubusercontent.com/immich-app/immich/refs/heads/main/design/immich-logo-stacked-light.svg"
+	{
+		"id": "immich",
+		"name": "Immich",
+		"description": "Personal photo/video cloud",
+		"iconURLs": {
+			"main": "https://raw.githubusercontent.com/immich-app/immich/refs/heads/main/design/immich-logo-stacked-light.svg"
+		},
+		"manifest": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/immich/manifest.json",
+		"currentRelease": "v2.6.1",
+		"storePage": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/immich/store.html"
 	},
-	"manifest": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/immich/manifest.json",
-	"currentRelease": "v2.6.1",
-	"storePage": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/immich/store.html"
-  }
+	{
+		"id": "jellyfin",
+		"name": "Jellyfin",
+		"description": "Personal media library",
+		"iconURLs": {
+			"main": "https://raw.githubusercontent.com/jellyfin/jellyfin-ux/master/branding/SVG/icon-transparent.svg"
+		},
+		"manifest": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/jellyfin/manifest.json",
+		"currentRelease": "10.11.8",
+		"storePage": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/jellyfin/store.html"
+	}
 ]

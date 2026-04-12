@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Immich App Details</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 16px 24px;
+            color: rgba(0, 0, 0, 0.88);
+            background-color: transparent;
+            line-height: 1.5714285714285714;
+        }
+
+        /* Header Layout */
+        .app-header {
+            display: flex;
+            align-items: flex-start;
+            gap: 24px;
+            margin-bottom: 32px;
+            flex-wrap: wrap;
+        }
+
+        .app-icon {
+            width: 120px;
+            height: 120px;
+            background-color: #f5f5f5;
+            border: 1px solid #d9d9d9;
+            border-radius: 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 16px;
+            box-sizing: border-box;
+            flex-shrink: 0;
+        }
+
+        .app-icon img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+        .app-header-details {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .app-title {
+            font-size: 28px;
+            font-weight: 600;
+            margin: 0 0 8px 0;
+            line-height: 1.2;
+        }
+
+        .app-tagline {
+            font-size: 16px;
+            color: rgba(0, 0, 0, 0.45);
+            margin: 0 0 16px 0;
+        }
+
+        /* Tags / Badges */
+        .app-meta-tags {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            background-color: #fafafa;
+            border: 1px solid #d9d9d9;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            color: rgba(0, 0, 0, 0.65);
+        }
+
+        /* Section Headings */
+        .section-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin: 24px 0 16px 0;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        /* Content Areas */
+        .app-description {
+            font-size: 14px;
+            color: rgba(0, 0, 0, 0.88);
+        }
+
+        .app-description p {
+            margin-top: 0;
+            margin-bottom: 1em;
+        }
+
+        .app-description ul {
+            padding-left: 20px;
+            margin-top: 0;
+        }
+
+        .app-description li {
+            margin-bottom: 8px;
+        }
+
+        .screenshots-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 16px;
+            margin-bottom: 32px;
+        }
+
+        .screenshot-placeholder {
+            aspect-ratio: 16 / 9;
+            background: linear-gradient(135deg, #e6f4ff 0%, #bae0ff 100%);
+            border: 1px solid #91caff;
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #0958d9;
+            font-weight: 500;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="app-header">
+        <div class="app-icon">
+            <img src="https://raw.githubusercontent.com/immich-app/immich/refs/heads/main/design/immich-logo-stacked-light.svg" alt="Immich Logo">
+        </div>
+        <div class="app-header-details">
+            <h1 class="app-title">Immich</h1>
+            <p class="app-tagline">High performance self-hosted photo and video management solution.</p>
+            <div class="app-meta-tags">
+                <span class="tag">Photo & Video</span>
+                <span class="tag">Self-Hosted</span>
+                <span class="tag">Open Source</span>
+                <span class="tag">Docker</span>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="section-title">Screenshots</h2>
+    <div class="screenshots-grid">
+        <div class="screenshot-placeholder">Timeline View</div>
+        <div class="screenshot-placeholder">Map & Location</div>
+        <div class="screenshot-placeholder">Albums & Sharing</div>
+    </div>
+
+    <h2 class="section-title">About this App</h2>
+    <div class="app-description">
+        <p>Immich is an open-source, high-performance, self-hosted photo and video backup solution directly from your mobile phone. It is designed to be an alternative to cloud-based services like Google Photos or iCloud, giving you complete ownership and control over your personal media.</p>
+        
+        <p><strong>Key Features:</strong></p>
+        <ul>
+            <li>Upload and view assets (videos and images) seamlessly.</li>
+            <li>Automatic background backup from your mobile device.</li>
+            <li>Facial recognition, location mapping, and object detection.</li>
+            <li>Multi-user support with sharing capabilities.</li>
+            <li>Extensive search capabilities based on metadata and machine learning.</li>
+        </ul>
+    </div>
+
+</body>
+</html>
