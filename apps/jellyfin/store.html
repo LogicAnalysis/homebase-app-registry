@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Immich App Details</title>
+    <title>Jellyfin App Details</title>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
@@ -26,7 +26,7 @@
         .app-icon {
             width: 120px;
             height: 120px;
-            background-color: #f5f5f5;
+            background-color: #000B25; 
             border: 1px solid #d9d9d9;
             border-radius: 16px;
             display: flex;
@@ -61,7 +61,6 @@
             margin: 0 0 16px 0;
         }
 
-        /* Tags / Badges */
         .app-meta-tags {
             display: flex;
             gap: 8px;
@@ -77,7 +76,6 @@
             color: rgba(0, 0, 0, 0.65);
         }
 
-        /* Section Headings */
         .section-title {
             font-size: 18px;
             font-weight: 600;
@@ -86,7 +84,6 @@
             border-bottom: 1px solid #f0f0f0;
         }
 
-        /* Content Areas */
         .app-description {
             font-size: 14px;
             color: rgba(0, 0, 0, 0.88);
@@ -115,13 +112,13 @@
 
         .screenshot-placeholder {
             aspect-ratio: 16 / 9;
-            background: linear-gradient(135deg, #e6f4ff 0%, #bae0ff 100%);
-            border: 1px solid #91caff;
+            background: linear-gradient(135deg, #e3d2eb 0%, #d4ebf5 100%);
+            border: 1px solid #aa5cc3;
             border-radius: 8px;
             display: flex;
             justify-content: center;
             align-items: center;
-            color: #0958d9;
+            color: #79439c;
             font-weight: 500;
             font-size: 14px;
         }
@@ -131,38 +128,40 @@
 
     <div class="app-header">
         <div class="app-icon">
-            <img src="https://raw.githubusercontent.com/immich-app/immich/refs/heads/main/design/immich-logo-stacked-light.svg" alt="Immich Logo">
+            <img src="https://raw.githubusercontent.com/jellyfin/jellyfin-ux/master/branding/SVG/icon-transparent.svg" alt="Jellyfin Logo">
         </div>
         <div class="app-header-details">
-            <h1 class="app-title">Immich</h1>
-            <p class="app-tagline">High performance self-hosted photo and video management solution.</p>
+            <h1 class="app-title">Jellyfin</h1>
+            <p class="app-tagline">The Free Software Media System.</p>
             <div class="app-meta-tags">
-                <span class="tag">Photo & Video</span>
+                <span class="tag">Media Server</span>
+                <span class="tag">Movies & TV</span>
                 <span class="tag">Self-Hosted</span>
                 <span class="tag">Open Source</span>
-                <span class="tag">Docker</span>
             </div>
         </div>
     </div>
 
     <h2 class="section-title">Screenshots</h2>
     <div class="screenshots-grid">
-        <div class="screenshot-placeholder">Timeline View</div>
-        <div class="screenshot-placeholder">Map & Location</div>
-        <div class="screenshot-placeholder">Albums & Sharing</div>
+        <div class="screenshot-placeholder">Home Dashboard</div>
+        <div class="screenshot-placeholder">Movie Details</div>
+        <div class="screenshot-placeholder">Live TV Guide</div>
     </div>
 
     <h2 class="section-title">About this App</h2>
     <div class="app-description">
-        <p>Immich is an open-source, high-performance, self-hosted photo and video backup solution directly from your mobile phone. It is designed to be an alternative to cloud-based services like Google Photos or iCloud, giving you complete ownership and control over your personal media.</p>
+        <p>Jellyfin is the volunteer-built media solution that puts you in control of your media. Stream to any device from your own server, with no strings attached. Your media, your server, your way.</p>
+        
+        <p>Built as a completely free alternative to proprietary systems like Emby and Plex, Jellyfin ensures there are no premium licenses, hidden fees, or data tracking mechanisms separating you from your library.</p>
         
         <p><strong>Key Features:</strong></p>
         <ul>
-            <li>Upload and view assets (videos and images) seamlessly.</li>
-            <li>Automatic background backup from your mobile device.</li>
-            <li>Facial recognition, location mapping, and object detection.</li>
-            <li>Multi-user support with sharing capabilities.</li>
-            <li>Extensive search capabilities based on metadata and machine learning.</li>
+            <li><strong>Movies & TV:</strong> Hold your entire collection with automatic metadata and poster fetching.</li>
+            <li><strong>Music & Books:</strong> Listen to your music library and read your ebooks or comics across devices.</li>
+            <li><strong>Live TV & DVR:</strong> Watch and record live TV by setting up a tuner alongside Jellyfin.</li>
+            <li><strong>SyncPlay:</strong> Share a watch party with your friends remotely.</li>
+            <li><strong>Multi-Platform:</strong> Dedicated apps available for Web, Android, iOS, Android TV, Fire TV, and Roku.</li>
         </ul>
     </div>
 

@@ -13,5 +13,11 @@
 	"scripts": {
 		"preinstall": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/immich/preinstall.sh"
 	},
-	"doc": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/immich/doc.html"
+	"doc": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/immich/doc.html",
+	"initialized": false,
+	"requirePreInstall": [
+		"name",
+		"email",
+		"password"
+	]
 }
