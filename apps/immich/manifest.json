@@ -1,7 +1,7 @@
 {
 	"id": "immich",
 	"name": "Immich",
-	"release": "2.7.2",
+	"release": "v2.7.2",
 	"description": "View and manage your photo library",
 	"port": 2283,
 	"composeURL": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/immich/docker-compose.yml",
@@ -11,11 +11,11 @@
 		"https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/immich/hwaccel.transcoding.yml"
 	],
 	"scripts": {
-		"preinstall": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/immich/preinstall.sh"
+		"preInit": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/immich/preInit.sh"
 	},
 	"doc": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/immich/doc.html",
 	"initialized": false,
-	"requirePreInstall": [
+	"requirePreInit": [
 		"name",
 		"email",
 		"password"
