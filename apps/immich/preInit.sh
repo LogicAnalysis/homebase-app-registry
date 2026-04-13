@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-API_URL="http://localhost:2283/api"
+API_URL="http://127.0.0.1:2283/api"
 DATA_FILE="preInitData.json"
 
 # Parse JSON to extract the user parameters
