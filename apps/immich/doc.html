@@ -1,4 +1,127 @@
-<div>
-	<h1>This is the Immich documentation page</h1>
-	<p>Testing...</p>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Immich - Documentation</title>
+    <style>
+        :root {
+            --text-main: #1f2937;
+            --text-muted: #4b5563;
+            --bg-main: #ffffff;
+            --bg-code: #f3f4f6;
+            --border-light: #e5e7eb;
+            --brand-color: #0ea5e9;
+            --callout-info-bg: #eff6ff;
+            --callout-info-border: #bfdbfe;
+            --callout-tip-bg: #f0fdf4;
+            --callout-tip-border: #bbf7d0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-main);
+            background-color: var(--bg-main);
+            margin: 0;
+            padding: 40px 24px;
+        }
+
+        .doc-container {
+            max-width: 840px;
+            margin: 0 auto;
+        }
+
+        h1 { font-size: 2.5rem; margin-bottom: 0.5rem; letter-spacing: -0.025em; }
+        h2 { font-size: 1.75rem; margin-top: 2.5rem; border-bottom: 1px solid var(--border-light); padding-bottom: 0.5rem; }
+        h3 { font-size: 1.25rem; margin-top: 2rem; color: var(--text-main); }
+        p, li { font-size: 1.05rem; color: var(--text-muted); }
+        ul { padding-left: 1.5rem; }
+        li { margin-bottom: 0.5rem; }
+
+        .subtitle {
+            font-size: 1.25rem;
+            color: var(--text-muted);
+            margin-top: 0;
+            margin-bottom: 2rem;
+        }
+
+        code {
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+            background-color: var(--bg-code);
+            padding: 0.2em 0.4em;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+
+        .callout {
+            padding: 1rem 1.25rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+            border-left: 4px solid;
+        }
+
+        .callout p { margin: 0; color: inherit; }
+        
+        .callout-info {
+            background-color: var(--callout-info-bg);
+            border-color: var(--brand-color);
+            color: #1e3a8a;
+        }
+
+        .callout-tip {
+            background-color: var(--callout-tip-bg);
+            border-color: #22c55e;
+            color: #14532d;
+        }
+
+        .callout-title {
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="doc-container">
+        <h1>Immich Documentation</h1>
+        <p class="subtitle">Self-hosted photo and video backup solution.</p>
+
+        <h2>1. Initial Setup</h2>
+        <p>Welcome to Immich! After your application finishes installing and spinning up, there are a few initial steps required to get your backup system running.</p>
+        
+        <h3>Accessing the Web UI</h3>
+        <p>Navigate to your Immich instance in your web browser. Upon your very first visit, you will be prompted to create an administrator account. This account will have full access to manage users, storage, and server settings.</p>
+
+        <div class="callout callout-info">
+            <span class="callout-title">Important</span>
+            <p>The first user created is automatically the administrator. Ensure you use a strong password, as this account controls your entire library instance.</p>
+        </div>
+
+        <h2>2. Connecting Your Mobile Device</h2>
+        <p>Immich's primary feature is seamless mobile backup, similar to Google Photos or Apple iCloud.</p>
+        <ul>
+            <li>Download the <strong>Immich app</strong> from the Google Play Store, Apple App Store, or F-Droid.</li>
+            <li>Open the app and enter your <strong>Server Endpoint URL</strong>. This should include the protocol and port (e.g., <code>http://your-server-ip:2283/api</code>).</li>
+            <li>Log in using the credentials you created in the Web UI.</li>
+            <li>Navigate to the <strong>Backup</strong> tab and select the local albums you wish to back up to your server.</li>
+        </ul>
+
+        <h2>3. Understanding Machine Learning</h2>
+        <p>Immich utilizes local machine learning to categorize your photos. Everything is processed directly on your hardware; no data is sent to external APIs.</p>
+        <ul>
+            <li><strong>Facial Recognition:</strong> Automatically groups photos by the people in them.</li>
+            <li><strong>Object Detection:</strong> Allows you to search your library using natural language (e.g., "dog at the beach" or "wedding cake").</li>
+            <li><strong>CLIP/Search:</strong> Powers the semantic search engine.</li>
+        </ul>
+
+        <div class="callout callout-tip">
+            <span class="callout-title">Pro-Tip: Background Processing</span>
+            <p>When you upload a large batch of photos for the first time, your server's CPU usage will spike as it generates thumbnails and runs machine learning models. This is normal. You can monitor the progress in the <strong>Administration -> Jobs</strong> dashboard.</p>
+        </div>
+
+        <h2>4. User Management</h2>
+        <p>As the administrator, you can invite family members or friends to use your server. Each user has their own private library and timeline. Users cannot see each other's photos unless they explicitly add them to a <strong>Shared Album</strong> or utilize the <strong>Partner Sharing</strong> feature.</p>
+    </div>
+</body>
+</html>
