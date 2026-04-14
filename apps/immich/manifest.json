@@ -15,9 +15,47 @@
 	},
 	"doc": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/immich/doc.html",
 	"initialized": false,
-	"requirePreInit": [
-		"name",
-		"email",
-		"password"
-	]
+	"requirePreInit": {
+		"title": "Preferences",
+		"pages": [
+			{
+				"title": "Immich Setup",
+				"fields": [
+					{
+						"type": "text",
+						"name": "name",
+						"label": "Name",
+						"required": true,
+						"placeholder": "Enter your name..."
+					},
+					{
+						"type": "email",
+						"name": "email",
+						"label": "Email",
+						"required": true,
+						"placeholder": "Enter your email address..."
+					},
+					{
+						"type": "password",
+						"name": "password",
+						"label": "Password",
+						"required": true,
+						"placeholder": "Enter a password...",
+						"confirmPassword": true
+					}
+				]
+			},
+			{
+				"title": "Immich Setup",
+				"description": "Create an Immich admin account...",
+				"fields": [
+					{
+						"type": "info",
+						"label": "Setting up an admin account",
+						"content": "Immich will now be setup with your new account. Please ensure that your email and password are stored securely, and use those credentials to login on the next page."
+					}
+				]
+			}
+		]
+	}
 }
