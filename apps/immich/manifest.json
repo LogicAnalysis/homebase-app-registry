@@ -16,10 +16,9 @@
 	"doc": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/immich/doc.html",
 	"initialized": false,
 	"requirePreInit": {
-		"title": "Preferences",
+		"title": "Immich Setup",
 		"pages": [
 			{
-				"title": "Immich Setup",
 				"fields": [
 					{
 						"type": "text",
@@ -46,12 +45,10 @@
 				]
 			},
 			{
-				"title": "Immich Setup",
-				"description": "Create an Immich admin account...",
 				"fields": [
 					{
 						"type": "info",
-						"label": "Setting up an admin account",
+						"label": "Setting up an Immich admin account",
 						"content": "Immich will now be setup with your new account. Please ensure that your email and password are stored securely, and use those credentials to login on the next page."
 					}
 				]
