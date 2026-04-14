@@ -47,9 +47,9 @@
 			{
 				"fields": [
 					{
-						"type": "info",
+						"type": "warning",
 						"label": "Setting up an Immich admin account",
-						"content": "Immich will now be setup with your new account. Please ensure that your email and password are stored securely, and use those credentials to login on the next page."
+						"content": "Immich will now be setup with your new account. Please ensure that your email and password are stored securely! Use those credentials to login on the next page."
 					}
 				]
 			}
