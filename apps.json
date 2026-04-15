@@ -7,7 +7,7 @@
 			"main": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/svg/adguard-home.svg"
 		},
 		"manifest": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/adguard_home/manifest.json",
-		"currentRelease": "v0.107.73",
+		"currentRelease": "v0.107.73-b",
 		"storePage": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/adguard_home/store.html"
 	},
 	{
@@ -18,7 +18,7 @@
 			"main": "https://raw.githubusercontent.com/immich-app/immich/refs/heads/main/design/immich-logo-stacked-light.svg"
 		},
 		"manifest": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/immich/manifest.json",
-		"currentRelease": "v2.7.2",
+		"currentRelease": "v2.7.2-b",
 		"storePage": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/immich/store.html"
 	},
 	{
@@ -29,7 +29,7 @@
 			"main": "https://raw.githubusercontent.com/jellyfin/jellyfin-ux/master/branding/SVG/icon-transparent.svg"
 		},
 		"manifest": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/jellyfin/manifest.json",
-		"currentRelease": "10.11.8",
+		"currentRelease": "10.11.8-b",
 		"storePage": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/jellyfin/store.html"
 	}
 ]

@@ -1,7 +1,7 @@
 {
 	"id": "immich",
 	"name": "Immich",
-	"release": "v2.7.2",
+	"release": "v2.7.2-b",
 	"description": "View and manage your photo library",
 	"port": 2283,
 	"composeURL": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/immich/docker-compose.yml",

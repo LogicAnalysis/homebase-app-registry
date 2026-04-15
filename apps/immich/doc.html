@@ -87,27 +87,16 @@
         <h1>Immich Documentation</h1>
         <p class="subtitle">Self-hosted photo and video backup solution.</p>
 
-        <h2>1. Initial Setup</h2>
-        <p>Welcome to Immich! After your application finishes installing and spinning up, there are a few initial steps required to get your backup system running.</p>
-        
-        <h3>Accessing the Web UI</h3>
-        <p>Navigate to your Immich instance in your web browser. Upon your very first visit, you will be prompted to create an administrator account. This account will have full access to manage users, storage, and server settings.</p>
-
-        <div class="callout callout-info">
-            <span class="callout-title">Important</span>
-            <p>The first user created is automatically the administrator. Ensure you use a strong password, as this account controls your entire library instance.</p>
-        </div>
-
-        <h2>2. Connecting Your Mobile Device</h2>
+        <h2>Connecting Your Mobile Device</h2>
         <p>Immich's primary feature is seamless mobile backup, similar to Google Photos or Apple iCloud.</p>
         <ul>
             <li>Download the <strong>Immich app</strong> from the Google Play Store, Apple App Store, or F-Droid.</li>
-            <li>Open the app and enter your <strong>Server Endpoint URL</strong>. This should include the protocol and port (e.g., <code>http://your-server-ip:2283/api</code>).</li>
+            <li>Open the app and enter your <strong>Server Endpoint URL</strong>. This should include the protocol and port (2283) <code>http://your-server-ip:2283</code>. You can find the server's IP address by going to system settings.</li>
             <li>Log in using the credentials you created in the Web UI.</li>
-            <li>Navigate to the <strong>Backup</strong> tab and select the local albums you wish to back up to your server.</li>
+            <li>Click the <strong>Backup</strong> icon at the top and select the albums you wish to back up.</li>
         </ul>
 
-        <h2>3. Understanding Machine Learning</h2>
+        <h2>Machine Learning</h2>
         <p>Immich utilizes local machine learning to categorize your photos. Everything is processed directly on your hardware; no data is sent to external APIs.</p>
         <ul>
             <li><strong>Facial Recognition:</strong> Automatically groups photos by the people in them.</li>
@@ -117,10 +106,10 @@
 
         <div class="callout callout-tip">
             <span class="callout-title">Pro-Tip: Background Processing</span>
-            <p>When you upload a large batch of photos for the first time, your server's CPU usage will spike as it generates thumbnails and runs machine learning models. This is normal. You can monitor the progress in the <strong>Administration -> Jobs</strong> dashboard.</p>
+            <p>When you upload a large batch of photos for the first time, Homebase CPU usage will spike as it generates thumbnails and runs machine learning models. This is normal. You can monitor the progress in the <strong>Administration -> Jobs</strong> dashboard.</p>
         </div>
 
-        <h2>4. User Management</h2>
+        <h2>User Management</h2>
         <p>As the administrator, you can invite family members or friends to use your server. Each user has their own private library and timeline. Users cannot see each other's photos unless they explicitly add them to a <strong>Shared Album</strong> or utilize the <strong>Partner Sharing</strong> feature.</p>
     </div>
 </body>

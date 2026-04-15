@@ -87,16 +87,16 @@
         <h1>Jellyfin Documentation</h1>
         <p class="subtitle">The Free Software Media System.</p>
 
-        <h2>1. Initial Setup Wizard</h2>
+        <h2>Initial Setup Wizard</h2>
         <p>When you first access your Jellyfin server, you will be greeted by the setup wizard. This process will guide you through creating your administrator account and setting your preferred metadata language.</p>
 
-        <h2>2. Adding Media Libraries</h2>
+        <h2>Adding Media Libraries</h2>
         <p>Jellyfin needs to know where your media files are stored to serve them to your devices.</p>
         <ul>
             <li>Go to <strong>Administration -> Dashboard -> Libraries</strong>.</li>
             <li>Click the <strong>Add Media Library</strong> button.</li>
             <li>Select the <strong>Content Type</strong> (e.g., Movies, Shows, Music). This is crucial as it determines which metadata scrapers Jellyfin uses.</li>
-            <li>Link the folder on your system where those specific files are stored.</li>
+            <li>Link the folder on your system where those specific files are/should be stored.</li>
         </ul>
 
         <div class="callout callout-info">
@@ -104,16 +104,14 @@
             <p>For accurate metadata fetching (posters, cast, descriptions), ensure your files are named cleanly. For TV shows, a structure like <code>Show Name (Year) / Season 01 / Show Name S01E01.mkv</code> is highly recommended.</p>
         </div>
 
-        <h2>3. Playing Your Media</h2>
-        <p>You can play media directly in your web browser, but Jellyfin shines when used with dedicated client applications.</p>
-        <p>Clients are available for almost every platform, including Android, iOS, Android TV, Fire TV, Roku, Windows, and macOS. Simply download the app on your respective device, enter your server's IP address and port (default is <code>8096</code>), and log in.</p>
+        <h2>Playing Your Media</h2>
+        <p>You can play media directly in your web browser, or with dedicated client applications.</p>
+        <p>Clients are available for almost every platform, including Android, iOS, Android TV, Fire TV, Roku, Windows, and macOS. Simply download the app on your respective device, enter your server's IP address (visible in Homebase system settings) and port (8096) <code>http://your-server-ip:8096</code>, and log in.</p>
 
-        <h2>4. Hardware Transcoding (Advanced)</h2>
+        <h2>Hardware Transcoding</h2>
         <p>If a playback device does not support the format of your media file, Jellyfin will convert it on the fly (transcoding). This is very CPU-intensive.</p>
-        <p>If your server has an Intel CPU with QuickSync, an NVIDIA GPU, or an AMD APU, you can enable Hardware Acceleration.</p>
         <ul>
             <li>Navigate to <strong>Dashboard -> Playback -> Transcoding</strong>.</li>
-            <li>Select your hardware acceleration type from the dropdown menu to significantly reduce CPU load during playback.</li>
         </ul>
         
         <div class="callout callout-tip">

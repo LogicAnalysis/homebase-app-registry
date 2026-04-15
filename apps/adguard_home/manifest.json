@@ -1,7 +1,7 @@
 {
 	"id": "adguard_home",
 	"name": "Adguard Home",
-	"release": "v0.107.73",
+	"release": "v0.107.73-b",
 	"description": "Network wide ad blocking/DNS management",
 	"port": 8081,
 	"composeURL": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/adguard_home/docker-compose.yml",

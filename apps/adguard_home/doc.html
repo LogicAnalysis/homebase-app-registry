@@ -97,25 +97,22 @@
 
         <div class="callout callout-warning">
             <span class="callout-title">Default credentials</span>
-            <p><strong>Username:</strong> admin</p>
-            <p><strong>Password:</strong> admin</p>
+            <p>Username: <strong>admin</strong></p>
+            <p>Password: <strong>admin</strong></p>
         </div>
 
-        <h2>1. Accessing the Dashboard</h2>
-        <p>After installation, navigate to your AdGuard Home web interface. You will be asked to configure the listening interfaces for the web panel and the DNS server itself. Usually, leaving these on the default <code>All interfaces</code> is recommended for home networks.</p>
-
-        <h2>2. Configuring Your Router (Crucial Step)</h2>
+        <h2>Configuring Your Router To Use Adguard Home</h2>
         <p>For AdGuard Home to block ads across your entire network, your devices need to use it as their DNS resolver. The easiest way to achieve this is through your home router. But first, you need to retrieve your Homebase IP address.</p>
 
         <div class="callout callout-warning">
             <span class="callout-title">Important: Set a Static IP</span>
             <p>Before modifying your router, go to your Homebase system settings by clicking <strong>Settings</strong> from the home screen. Here, you will see the IP address you need to use in your router.</p>
-            <p style="margin-top: 8px;"><strong>Highly Recommended:</strong> Click <strong>Configure</strong> on the system settings page and tick the <strong>Static IP</strong> toggle. If your IP address is not static and changes after a reboot, your network will lose internet access!</p>
+            <p style="margin-top: 8px;"><strong>Highly Recommended:</strong> Click <strong>Configure</strong> on the system settings page and enable <strong>Static IP</strong>. If your IP address is not static and changes after a reboot, your network will lose internet access!</p>
         </div>
 
         <p>Once you have your static IP address confirmed:</p>
         <ul>
-            <li>Log into your home router's admin panel.</li>
+            <li>Log into your home router's admin panel or use the app.</li>
             <li>Locate the <strong>DHCP/LAN Settings</strong> or <strong>DNS Settings</strong>.</li>
             <li>Change the Primary DNS Server to the Homebase IP address you found in the step above.</li>
             <li>Save the changes and restart your router or reconnect your devices to the Wi-Fi.</li>
@@ -126,11 +123,11 @@
             <p>Once configured, browse the web on your phone or computer. Go to the AdGuard Home web dashboard and check the <strong>Query Log</strong>. If you see domains appearing as you browse, your setup is working correctly!</p>
         </div>
 
-        <h2>3. Managing Blocklists</h2>
+        <h2>Managing Blocklists</h2>
         <p>AdGuard Home comes with a default set of ad-blocking rules, but you can expand its capabilities.</p>
         <p>Navigate to <strong>Filters -> DNS blocklists</strong>. Here you can enable pre-installed lists or add custom lists from the community (such as OISD or StevenBlack's lists) to enhance protection against malware, phishing, and tracking.</p>
 
-        <h2>4. Upstream DNS Servers</h2>
+        <h2>Upstream DNS Servers</h2>
         <p>AdGuard Home needs to know where to ask for domains it doesn't block. These are called Upstream DNS servers.</p>
         <p>Go to <strong>Settings -> DNS settings</strong>. By default, it uses Quad9. You can change this to Cloudflare (<code>https://dns.cloudflare.com/dns-query</code>), Google (<code>8.8.8.8</code>), or any privacy-respecting provider you prefer. Using HTTPS or TLS protocols here encrypts your outbound DNS requests.</p>
 
