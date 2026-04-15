@@ -1,0 +1,30 @@
+{
+	"id": "adguard_home",
+	"name": "Adguard Home",
+	"release": "v0.107.73",
+	"description": "Network wide ad blocking/DNS management",
+	"port": 8081,
+	"composeURL": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/adguard_home/docker-compose.yml",
+	"doc": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/adguard_home/doc.html",
+	"initialized": false,
+	"extraFiles": [
+		"https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/adguard_home/AdguardHome.yaml"
+	],
+	"scripts": {
+		"preInstall": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/adguard_home/preInstall.sh"
+	},
+	"requirePreInit": {
+		"title": "Adguard Home Setup",
+		"pages": [
+			{
+				"fields": [
+					{
+						"type": "warning",
+						"label": "Default Credentials",
+						"content": "When Adguard Home is set up, the default credentials are:\nUsername:admin\npassword: (empty)"
+					}
+				]
+			}
+		]
+	}
+}
