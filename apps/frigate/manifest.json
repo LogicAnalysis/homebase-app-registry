@@ -10,7 +10,7 @@
 	},
 	"doc": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/frigate/doc.html",
 	"initialized": false,
-	"requirePreInit": {
+	"requirePreInstall": {
 		"title": "Frigate Setup",
 		"pages": [
 			{
