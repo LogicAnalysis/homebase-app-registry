@@ -8,7 +8,7 @@
 	"doc": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/adguard_home/doc.html",
 	"initialized": false,
 	"extraFiles": [
-		"https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/adguard_home/AdguardHome.yaml"
+		"https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/adguard_home/AdGuardHome.yaml"
 	],
 	"scripts": {
 		"preInstall": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/adguard_home/preInstall.sh"

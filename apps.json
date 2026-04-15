@@ -1,10 +1,10 @@
 [
-		{
+	{
 		"id": "adguard",
 		"name": "AdGuard Home",
 		"description": "Network wide ad and tracker blocking",
 		"iconURLs": {
-			"main": "https://cdn.adguard.com/public/Adguard/Common/adguard_home.svg"
+			"main": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/svg/adguard-home.svg"
 		},
 		"manifest": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/adguard_home/manifest.json",
 		"currentRelease": "v0.107.73",
