@@ -21,7 +21,7 @@
 					{
 						"type": "warning",
 						"label": "Default Credentials",
-						"content": "When Adguard Home is set up, the default credentials are:\nUsername:admin\npassword: (empty)"
+						"content": "When Adguard Home is set up, the default credentials are:\n\nUsername:admin\npassword: admin"
 					}
 				]
 			}
