@@ -21,7 +21,16 @@
 					{
 						"type": "warning",
 						"label": "Default Credentials",
-						"content": "When Adguard Home is set up, the default credentials are:\n\nUsername:admin\npassword: admin"
+						"content": "When Adguard Home is set up, the default credentials are:\n\nUsername: admin\npassword: admin"
+					}
+				]
+			},
+			{
+				"fields": [
+					{
+						"type": "info",
+						"label": "Documentation Access/Help",
+						"content": "Remember that documentation and setup instructions can be accessed any time you are in the app by clicking the documentation icon at the top right of the screen"
 					}
 				]
 			}

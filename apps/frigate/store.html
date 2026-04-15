@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frigate App Details</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 16px 24px;
+            color: rgba(0, 0, 0, 0.88);
+            background-color: transparent;
+            line-height: 1.5714285714285714;
+        }
+
+        /* Header Layout */
+        .app-header {
+            display: flex;
+            align-items: flex-start;
+            gap: 24px;
+            margin-bottom: 32px;
+            flex-wrap: wrap;
+        }
+
+        .app-icon {
+            width: 120px;
+            height: 120px;
+            background-color: #fff7ed; 
+            border: 1px solid #d9d9d9;
+            border-radius: 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 16px;
+            box-sizing: border-box;
+            flex-shrink: 0;
+        }
+
+        .app-icon img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+        .app-header-details {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .app-title {
+            font-size: 28px;
+            font-weight: 600;
+            margin: 0 0 8px 0;
+            line-height: 1.2;
+        }
+
+        .app-tagline {
+            font-size: 16px;
+            color: rgba(0, 0, 0, 0.45);
+            margin: 0 0 16px 0;
+        }
+
+        .app-meta-tags {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            background-color: #fafafa;
+            border: 1px solid #d9d9d9;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            color: rgba(0, 0, 0, 0.65);
+        }
+
+        /* Section Headings */
+        .section-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin: 24px 0 16px 0;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        /* Content Areas */
+        .app-description {
+            font-size: 14px;
+            color: rgba(0, 0, 0, 0.88);
+        }
+
+        .app-description p {
+            margin-top: 0;
+            margin-bottom: 1em;
+        }
+
+        .app-description ul {
+            padding-left: 20px;
+            margin-top: 0;
+        }
+
+        .app-description li {
+            margin-bottom: 8px;
+        }
+
+        /* Screenshots Grid */
+        .screenshots-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 16px;
+            margin-bottom: 32px;
+        }
+
+        .screenshot-placeholder {
+            aspect-ratio: 16 / 9;
+            /* Frigate themed orange gradient */
+            background: linear-gradient(135deg, #ffedd5 0%, #fed7aa 100%);
+            border: 1px solid #fdba74;
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #c2410c;
+            font-weight: 500;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="app-header">
+        <div class="app-icon">
+            <img src="https://raw.githubusercontent.com/blakeblackshear/frigate/refs/heads/dev/docs/static/img/branding/logo.svg" alt="Frigate Logo">
+        </div>
+        <div class="app-header-details">
+            <h1 class="app-title">Frigate</h1>
+            <p class="app-tagline">Complete and local NVR designed for AI object detection.</p>
+            <div class="app-meta-tags">
+                <span class="tag">Security</span>
+                <span class="tag">NVR</span>
+                <span class="tag">AI</span>
+                <span class="tag">Smart Home</span>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="section-title">Screenshots</h2>
+    <div class="screenshots-grid">
+        <div class="screenshot-placeholder">Live Cameras</div>
+        <div class="screenshot-placeholder">Event Timeline</div>
+        <div class="screenshot-placeholder">Zone Configuration</div>
+    </div>
+
+    <h2 class="section-title">About this App</h2>
+    <div class="app-description">
+        <p>Frigate is an open-source NVR (Network Video Recorder) built around real-time AI object detection. All processing is performed locally on your own hardware, meaning no cloud subscriptions are required and your privacy is fully guaranteed.</p>
+        
+        <p>Instead of relying on generic motion detection that triggers on shadows or trees, Frigate uses machine learning to identify specific objects (like people, cars, or animals) with extreme accuracy, making it the perfect companion for home automation.</p>
+        
+        <p><strong>Key Features:</strong></p>
+        <ul>
+            <li><strong>AI Object Detection:</strong> Accurately detect people, vehicles, pets, and more in real-time.</li>
+            <li><strong>Optimized Performance:</strong> Designed to minimize CPU usage by using motion detection to trigger hardware-accelerated AI object identification.</li>
+            <li><strong>Home Assistant Integration:</strong> First-class integration via MQTT for reliable notifications and complex smart home automations.</li>
+            <li><strong>Smart Retention:</strong> Save space by configuring your recording rules to only keep footage when specific objects are detected in targeted zones.</li>
+            <li><strong>Privacy First:</strong> 100% local processing with zero external dependencies or telemetry.</li>
+        </ul>
+    </div>
+
+</body>
+</html>

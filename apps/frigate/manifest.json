@@ -1,0 +1,39 @@
+{
+	"id": "frigate",
+	"name": "Frigate",
+	"release": "0.17.1",
+	"description": "Setup and manage home security cameras",
+	"port": 8971,
+	"composeURL": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/frigate/docker-compose.yml",
+	"scripts": {
+		"preInstall": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/frigate/preInstall.sh"
+	},
+	"doc": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/frigate/doc.html",
+	"initialized": false,
+	"requirePreInit": {
+		"title": "Frigate Setup",
+		"pages": [
+			{
+				"fields": [
+					{
+						"type": "warning",
+						"label": "High system resource usage",
+						"content": "Frigate, while great for recording, is very resource intensive when it comes to object recognition. Please limit the number of cameras and recognition image resolution/frequency in the app's settings!"
+					}
+				]
+			},
+			{
+				"title": "Please enter the number of cameras you will be using",
+				"fields": [
+					{
+						"type": "number",
+						"name": "cameras",
+						"label": "Cameras",
+						"required": true,
+						"placeholder": "Please enter number of cameras..."
+					}
+				]
+			}
+		]
+	}
+}

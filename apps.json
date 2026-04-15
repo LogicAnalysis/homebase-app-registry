@@ -11,6 +11,17 @@
 		"storePage": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/adguard_home/store.html"
 	},
 	{
+		"id": "frigate",
+		"name": "Frigate",
+		"description": "Home camera security app",
+		"iconURLs": {
+			"main": "https://raw.githubusercontent.com/blakeblackshear/frigate/refs/heads/dev/docs/static/img/branding/logo.svg"
+		},
+		"manifest": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/frigate/manifest.json",
+		"currentRelease": "0.17.1",
+		"storePage": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/frigate/store.html"
+	},
+	{
 		"id": "immich",
 		"name": "Immich",
 		"description": "Personal photo/video cloud",

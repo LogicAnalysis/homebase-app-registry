@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frigate - Documentation</title>
+    <style>
+        :root {
+            --text-main: #1f2937;
+            --text-muted: #4b5563;
+            --bg-main: #ffffff;
+            --bg-code: #f3f4f6;
+            --border-light: #e5e7eb;
+            --brand-color: #f97316;
+            --callout-info-bg: #fff7ed;
+            --callout-info-border: #ffedd5;
+            --callout-tip-bg: #f0fdf4;
+            --callout-tip-border: #bbf7d0;
+            --callout-warning-bg: #fffbeb;
+            --callout-warning-border: #fde68a;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-main);
+            background-color: var(--bg-main);
+            margin: 0;
+            padding: 40px 24px;
+        }
+
+        .doc-container {
+            max-width: 840px;
+            margin: 0 auto;
+        }
+
+        h1 { font-size: 2.5rem; margin-bottom: 0.5rem; letter-spacing: -0.025em; }
+        h2 { font-size: 1.75rem; margin-top: 2.5rem; border-bottom: 1px solid var(--border-light); padding-bottom: 0.5rem; }
+        h3 { font-size: 1.25rem; margin-top: 2rem; color: var(--text-main); }
+        p, li { font-size: 1.05rem; color: var(--text-muted); }
+        ul { padding-left: 1.5rem; }
+        li { margin-bottom: 0.5rem; }
+
+        .subtitle {
+            font-size: 1.25rem;
+            color: var(--text-muted);
+            margin-top: 0;
+            margin-bottom: 2rem;
+        }
+
+        code {
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+            background-color: var(--bg-code);
+            padding: 0.2em 0.4em;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+
+        .callout {
+            padding: 1rem 1.25rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+            border-left: 4px solid;
+        }
+
+        .callout p { margin: 0; color: inherit; }
+        
+        .callout-info {
+            background-color: var(--callout-info-bg);
+            border-color: var(--brand-color);
+            color: #9a3412;
+        }
+
+        .callout-tip {
+            background-color: var(--callout-tip-bg);
+            border-color: #22c55e;
+            color: #14532d;
+        }
+        
+        .callout-warning {
+            background-color: var(--callout-warning-bg);
+            border-color: #f59e0b;
+            color: #92400e;
+        }
+
+        .callout-title {
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="doc-container">
+        <h1>Frigate Documentation</h1>
+        <p class="subtitle">Complete and local NVR designed for AI object detection.</p>
+
+        <h2>Accessing the Dashboard</h2>
+        <p>To view your cameras, access events, and manage settings, navigate to the Frigate Web UI. This can be reached by typing your Homebase IP address into your browser followed by the port 5000 (e.g., <code>http://your-server-ip:5000</code>). You can check the Homebase system settings to verify your exact IP.</p>
+
+        <h2>Adding Cameras</h2>
+        <p>Frigate uses a configuration file to understand your network topology and camera feeds. You can edit this configuration directly from the <strong>Config</strong> tab in the web interface.</p>
+        <ul>
+            <li>Retrieve the <strong>RTSP stream URL</strong> for your IP camera (refer to your camera manufacturer's documentation).</li>
+            <li>In the Frigate configuration, define the camera name and add the stream URL under the <code>inputs</code> section.</li>
+            <li>Set up the desired roles for the stream, such as <code>detect</code> (for AI analysis) or <code>record</code> (for saving the footage).</li>
+        </ul>
+
+        <div class="callout callout-warning">
+            <span class="callout-title">Camera Stream Resolutions</span>
+            <p>For optimal performance, it is highly recommended to use your camera's low-resolution "sub-stream" (e.g., 720p or lower) for the <code>detect</code> role. Using high-resolution 4K streams for AI detection will cause severe Homebase CPU spikes and result in delayed notifications.</p>
+        </div>
+
+        <h2>Hardware Acceleration (Detectors)</h2>
+        <p>By default, Frigate runs its machine learning models on the CPU. While functional for a single camera, this is highly inefficient for multiple streams.</p>
+        <p>If your Homebase supports it, passing through a Google Coral Edge TPU or utilizing a compatible GPU will drastically speed up inference times and lower system load. You can configure your designated <code>detectors</code> within the configuration file to offload this processing.</p>
+
+        <div class="callout callout-tip">
+            <span class="callout-title">Pro-Tip: Monitor Inference Speed</span>
+            <p>Go to the <strong>System</strong> page in the Frigate UI. Look at your Inference Speed. A well-configured hardware accelerator should return inference speeds below 15ms. If it's above 100ms, you are likely relying on CPU processing.</p>
+        </div>
+
+        <h2>Zones & Masks</h2>
+        <p>To reduce false positives and control exactly when Frigate saves an event, you can draw Zones and Masks directly in the Frigate Web UI.</p>
+        <ul>
+            <li><strong>Masks:</strong> Tell the AI to completely ignore specific areas of the camera view (e.g., a tree that moves in the wind or a timestamp burned into the video feed).</li>
+            <li><strong>Zones:</strong> Define areas of interest (e.g., "Driveway" or "Front Porch"). You can configure Frigate to only alert you when a person enters the specific "Front Porch" zone, rather than just walking past on the street.</li>
+        </ul>
+    </div>
+</body>
+</html>
