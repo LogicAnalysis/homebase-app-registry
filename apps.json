@@ -1,6 +1,6 @@
 [
 	{
-		"id": "adguard",
+		"id": "adguard_home",
 		"name": "AdGuard Home",
 		"description": "Network wide ad and tracker blocking",
 		"iconURLs": {
