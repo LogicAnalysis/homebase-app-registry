@@ -1,4 +1,15 @@
 [
+		{
+		"id": "adguard",
+		"name": "AdGuard Home",
+		"description": "Network wide ad and tracker blocking",
+		"iconURLs": {
+			"main": "https://cdn.adguard.com/public/Adguard/Common/adguard_home.svg"
+		},
+		"manifest": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/adguard_home/manifest.json",
+		"currentRelease": "v0.107.73",
+		"storePage": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/adguard_home/store.html"
+	},
 	{
 		"id": "immich",
 		"name": "Immich",
