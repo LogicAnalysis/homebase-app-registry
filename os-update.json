@@ -1,5 +1,5 @@
 {
   "latestRelease": "0.7.6",
-  "-": "https://github.com/LogicAnalysis/homebase-app-registry/raw/refs/heads/main/updates/homebase-update-0.7.6.raucb",  
+  "bundleURL": "https://github.com/LogicAnalysis/homebase-app-registry/raw/refs/heads/main/updates/homebase-update-0.7.6.raucb",  
   "releaseNotes": "- Major refactor\n- Improve OTA update reliability"
 }
