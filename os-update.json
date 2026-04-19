@@ -1,6 +1,6 @@
 {
-  "buildSerial": "82",
-  "latestRelease": "0.8.2",
-  "bundleURL": "https://github.com/LogicAnalysis/homebase-app-registry/raw/refs/heads/main/updates/homebase-update-0.8.2.raucb",  
-  "releaseNotes": "- Improved menu bar visibility for smaller screens\n- General enhancements"
+  "buildSerial": "84",
+  "latestRelease": "0.8.4",
+  "bundleURL": "https://github.com/LogicAnalysis/homebase-app-registry/raw/refs/heads/main/updates/homebase-update-0.8.4.raucb",  
+  "releaseNotes": "- Added power system state options\n- General enhancements"
 }
