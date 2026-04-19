@@ -1,5 +1,5 @@
 {
-  "buildSerial": 81,
+  "buildSerial": "81",
   "latestRelease": "0.8.1",
   "bundleURL": "https://github.com/LogicAnalysis/homebase-app-registry/raw/refs/heads/main/updates/homebase-update-0.8.1.raucb",  
   "releaseNotes": "- Improved OTA reliability\n- General enhancements"
