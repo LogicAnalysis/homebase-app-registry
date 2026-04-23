@@ -1,12 +1,15 @@
 {
 	"id": "file_browser",
 	"name": "File Browser",
-	"release": "v2.63.2",
+	"release": "1.3-stable",
 	"description": "Cloud file browser",
 	"port": 2980,
 	"composeURL": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/file_browser/docker-compose.yml",
 	"doc": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/file_browser/doc.html",
 	"initialized": false,
+	"extraFiles": [
+		"https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/file_browser/config.yaml"
+	],
 	"scripts": {
 		"preInstall": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/file_browser/preInstall.sh"
 	},

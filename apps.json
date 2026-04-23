@@ -16,7 +16,7 @@
 		"name": "File Browser",
 		"description": "Personal cloud file browser",
 		"iconURLs": {
-			"main": "https://raw.githubusercontent.com/filebrowser/filebrowser/7bd27f5e823651420cedd87a6c6503b1a954a4dd/branding/logo.svg"
+			"main": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/file_browser/static/main-icon.svg"
 		},
 		"manifest": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/file_browser/manifest.json",
 		"currentRelease": "v2.63.2",

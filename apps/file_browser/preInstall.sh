@@ -1,31 +1,19 @@
 #!/bin/bash
 
-# Fail if AdGuardHome.yaml exists
 set -e
 
-# Ensure storage dir exists
-mkdir -p /app/data/apps/storage
+CONFIG_FILE="data/config.yaml"
 
-# Extract json values for the env file
 FB_USER=$(jq -r '.username' preInstallData.json)
-RAW_PASS=$(jq -r '.password' preInstallData.json)
-FB_PASS=$(docker run --rm filebrowser/filebrowser:v2.63.2 hash "$RAW_PASS")
+FB_PASS=$(jq -r '.password' preInstallData.json)
 
-cat <<EOF > preInstallData.env
-FB_USERNAME=$FB_USER
-FB_PASSWORD=$FB_PASS
-EOF
+sed -i "s|^[[:space:]]*adminUsername:.*|  adminUsername: ${FB_USER}|" "$CONFIG_FILE"
+sed -i "s|^[[:space:]]*adminPassword:.*|  adminPassword: ${FB_PASS}|" "$CONFIG_FILE"
 
-# Create empty db file so Docker doesn't create a directory
-touch filebrowser.db
-
-# 4. Start the Docker Compose stack
-echo "Starting Filebrowser..."
 docker compose up -d
 
-# Wait for container to boot and read env file
-sleep 5
+sleep 10
 
-# Clean up sensitive files
-rm preInstallData.json
-echo "" > preInstallData.env
+sed -i '/^[[:space:]]*adminPassword:/d' "$CONFIG_FILE"
+
+rm -f preInstallData.json
