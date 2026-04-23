@@ -9,11 +9,7 @@ mkdir -p /app/data/apps/storage
 # Extract json values for the env file
 FB_USER=$(jq -r '.username' preInstallData.json)
 RAW_PASS=$(jq -r '.password' preInstallData.json)
-UNESCAPED_PASS=$(docker run --rm filebrowser/filebrowser:v2.63.2 hash "$RAW_PASS")
-
-# Docker Compose treats $ as variable interpolation in .env files
-# Rplace every $ with $$ so Docker passes the hash correctly
-FB_PASS=$(echo "$FB_PASS" | sed 's/\$/\$\$/g')
+FB_PASS=$(docker run --rm filebrowser/filebrowser:v2.63.2 hash "$RAW_PASS")
 
 cat <<EOF > preInstallData.env
 FB_USERNAME=$FB_USER
