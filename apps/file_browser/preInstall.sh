@@ -4,6 +4,9 @@ set -e
 
 CONFIG_FILE="data/config.yaml"
 
+mkdir -p data/tmp
+mv config.yaml "$CONFIG_FILE"
+
 FB_USER=$(jq -r '.username' preInstallData.json)
 FB_PASS=$(jq -r '.password' preInstallData.json)
 
