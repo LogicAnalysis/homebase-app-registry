@@ -1,6 +1,6 @@
 {
-  "buildSerial": "89",
-  "latestRelease": "0.8.9",
-  "bundleURL": "https://github.com/LogicAnalysis/homebase-app-registry/raw/refs/heads/main/updates/homebase-update-0.8.9.raucb",  
-  "releaseNotes": "- Improved OTA update reliability\n- General enhancements"
+  "buildSerial": "90",
+  "latestRelease": "0.9.0",
+  "bundleURL": "https://github.com/LogicAnalysis/homebase-app-registry/raw/refs/heads/main/updates/homebase-update-0.9.0.raucb",  
+  "releaseNotes": "- Fixed bootloader startup partition selection logic\n- General enhancements"
 }
