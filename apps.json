@@ -11,6 +11,17 @@
 		"storePage": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/adguard_home/store.html"
 	},
 	{
+		"id": "file_browser",
+		"name": "File Browser",
+		"description": "Personal cloud file browser",
+		"iconURLs": {
+			"main": "https://raw.githubusercontent.com/filebrowser/filebrowser/7bd27f5e823651420cedd87a6c6503b1a954a4dd/branding/logo.svg"
+		},
+		"manifest": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/file_browser/manifest.json",
+		"currentRelease": "v2.63.2",
+		"storePage": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/file_browser/store.html"
+	},
+	{
 		"id": "frigate",
 		"name": "Frigate",
 		"description": "Home camera security app",
@@ -40,7 +51,7 @@
 			"main": "https://raw.githubusercontent.com/jellyfin/jellyfin-ux/master/branding/SVG/icon-transparent.svg"
 		},
 		"manifest": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/jellyfin/manifest.json",
-		"currentRelease": "10.11.8-b",
+		"currentRelease": "10.11.8-c",
 		"storePage": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/jellyfin/store.html"
 	}
 ]
