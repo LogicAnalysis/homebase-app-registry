@@ -3,15 +3,8 @@
 # Fail if AdGuardHome.yaml exists
 set -e
 
+# Ensure storage dir exists
 mkdir -p /app/data/apps/storage
-
-
-
-
-
-
-
-
 
 # Extract json values for the env file
 FB_USER=$(jq -r '.username' preInstallData.json)
@@ -33,4 +26,5 @@ docker compose up -d
 sleep 5
 
 # Clean up sensitive files
-rm preInstallData.json preInstallData.env
+rm preInstallData.json
+echo "" > preInstallData.env
