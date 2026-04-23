@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Browser App Details</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 16px 24px;
+            color: rgba(0, 0, 0, 0.88);
+            background-color: transparent;
+            line-height: 1.5714285714285714;
+        }
+
+        /* Header Layout */
+        .app-header {
+            display: flex;
+            align-items: flex-start;
+            gap: 24px;
+            margin-bottom: 32px;
+            flex-wrap: wrap;
+        }
+
+        .app-icon {
+            width: 120px;
+            height: 120px;
+            background-color: #f0fdfa; 
+            border: 1px solid #d9d9d9;
+            border-radius: 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 16px;
+            box-sizing: border-box;
+            flex-shrink: 0;
+        }
+
+        .app-icon img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+        .app-header-details {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .app-title {
+            font-size: 28px;
+            font-weight: 600;
+            margin: 0 0 8px 0;
+            line-height: 1.2;
+        }
+
+        .app-tagline {
+            font-size: 16px;
+            color: rgba(0, 0, 0, 0.45);
+            margin: 0 0 16px 0;
+        }
+
+        .app-meta-tags {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            background-color: #fafafa;
+            border: 1px solid #d9d9d9;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            color: rgba(0, 0, 0, 0.65);
+        }
+
+        /* Section Headings */
+        .section-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin: 24px 0 16px 0;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        /* Content Areas */
+        .app-description {
+            font-size: 14px;
+            color: rgba(0, 0, 0, 0.88);
+        }
+
+        .app-description p {
+            margin-top: 0;
+            margin-bottom: 1em;
+        }
+
+        .app-description ul {
+            padding-left: 20px;
+            margin-top: 0;
+        }
+
+        .app-description li {
+            margin-bottom: 8px;
+        }
+
+        /* Screenshots Grid */
+        .screenshots-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 16px;
+            margin-bottom: 32px;
+        }
+
+        .screenshot-placeholder {
+            aspect-ratio: 16 / 9;
+            /* File Browser themed teal/blue gradient */
+            background: linear-gradient(135deg, #ccfbf1 0%, #99f6e4 100%);
+            border: 1px solid #5eead4;
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #0f766e;
+            font-weight: 500;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="app-header">
+        <div class="app-icon">
+            <img src="https://filebrowser.org/img/logo.svg" alt="File Browser Logo">
+        </div>
+        <div class="app-header-details">
+            <h1 class="app-title">File Browser</h1>
+            <p class="app-tagline">Web-based file manager to create your own personal cloud.</p>
+            <div class="app-meta-tags">
+                <span class="tag">File Manager</span>
+                <span class="tag">Cloud Storage</span>
+                <span class="tag">Web Interface</span>
+                <span class="tag">Productivity</span>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="section-title">Screenshots</h2>
+    <div class="screenshots-grid">
+        <div class="screenshot-placeholder">Directory Explorer</div>
+        <div class="screenshot-placeholder">Text & Code Editor</div>
+        <div class="screenshot-placeholder">Link Sharing</div>
+    </div>
+
+    <h2 class="section-title">About this App</h2>
+    <div class="app-description">
+        <p>File Browser provides a clean, fast file managing interface within a specified directory on your server. It is a "create-your-own-cloud" piece of software that lets you upload, delete, preview, rename, and edit your files from anywhere, without relying on third-party cloud providers.</p>
+        
+        <p>Whether you need a simple way to access your Homebase storage remotely, share files with friends, or edit configuration files via the web, File Browser handles it effortlessly.</p>
+        
+        <p><strong>Key Features:</strong></p>
+        <ul>
+            <li><strong>Complete File Management:</strong> Seamlessly upload folders, download archives, and organize your files via a responsive web interface.</li>
+            <li><strong>Multi-User Support:</strong> Create isolated accounts for family or colleagues, ensuring each user can only access their specific directory.</li>
+            <li><strong>Built-in Editor:</strong> Edit text, code, and markdown files directly within your browser.</li>
+            <li><strong>Shareable Links:</strong> Generate secure, expiring links to share specific files or folders with people outside your network.</li>
+            <li><strong>Custom Commands:</strong> Execute predefined shell commands or scripts on your server directly from the File Browser UI.</li>
+        </ul>
+    </div>
+
+</body>
+</html>

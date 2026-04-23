@@ -1,0 +1,15 @@
+---
+services:
+  filebrowser:
+    image: filebrowser/filebrowser
+    container_name: filebrowser
+    env_file:
+      - preInstallData.env
+    volumes:
+      - /app/data/apps/storage:/srv
+      - /app/data/apps/media:/media
+      - ./filebrowser.db:/database.db
+      - ./settings.json:/config.json
+    ports:
+      - 2980:80
+    restart: unless-stopped

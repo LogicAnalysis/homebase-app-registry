@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Browser - Documentation</title>
+    <style>
+        :root {
+            --text-main: #1f2937;
+            --text-muted: #4b5563;
+            --bg-main: #ffffff;
+            --bg-code: #f3f4f6;
+            --border-light: #e5e7eb;
+            --brand-color: #0d9488;
+            --callout-info-bg: #f0fdfa;
+            --callout-info-border: #ccfbf1;
+            --callout-tip-bg: #f0fdf4;
+            --callout-tip-border: #bbf7d0;
+            --callout-warning-bg: #fffbeb;
+            --callout-warning-border: #fde68a;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-main);
+            background-color: var(--bg-main);
+            margin: 0;
+            padding: 40px 24px;
+        }
+
+        .doc-container {
+            max-width: 840px;
+            margin: 0 auto;
+        }
+
+        h1 { font-size: 2.5rem; margin-bottom: 0.5rem; letter-spacing: -0.025em; }
+        h2 { font-size: 1.75rem; margin-top: 2.5rem; border-bottom: 1px solid var(--border-light); padding-bottom: 0.5rem; }
+        h3 { font-size: 1.25rem; margin-top: 2rem; color: var(--text-main); }
+        p, li { font-size: 1.05rem; color: var(--text-muted); }
+        ul { padding-left: 1.5rem; }
+        li { margin-bottom: 0.5rem; }
+
+        .subtitle {
+            font-size: 1.25rem;
+            color: var(--text-muted);
+            margin-top: 0;
+            margin-bottom: 2rem;
+        }
+
+        code {
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+            background-color: var(--bg-code);
+            padding: 0.2em 0.4em;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+
+        .callout {
+            padding: 1rem 1.25rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+            border-left: 4px solid;
+        }
+
+        .callout p { margin: 0; color: inherit; }
+        
+        .callout-info {
+            background-color: var(--callout-info-bg);
+            border-color: var(--brand-color);
+            color: #115e59;
+        }
+
+        .callout-tip {
+            background-color: var(--callout-tip-bg);
+            border-color: #22c55e;
+            color: #14532d;
+        }
+        
+        .callout-warning {
+            background-color: var(--callout-warning-bg);
+            border-color: #f59e0b;
+            color: #92400e;
+        }
+
+        .callout-title {
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="doc-container">
+        <h1>File Browser Documentation</h1>
+        <p class="subtitle">Web-based file manager to create your own personal cloud.</p>
+
+        <div class="callout callout-warning">
+            <p style="margin-top: 8px; font-size: 0.95em;"><em>Your credentials were set when you first launched the app. If you forget those original admin credentials, you will have to uninstall and reinstall this app to enter new ones!</em></p>
+        </div>
+
+        <h2>Accessing the Interface</h2>
+        <p>File Browser provides a complete graphical interface right from your web browser.</p>
+
+        <h2>Managing Users and Directories</h2>
+        <p>As the administrator, you can grant access to friends or family by creating isolated user accounts. Each user can have their own scope (the root folder they are allowed to see).</p>
+        <ul>
+            <li>Click on <strong>Settings</strong> in the left sidebar, then navigate to the <strong>User Management</strong> tab.</li>
+            <li>Click <strong>New</strong> to create a user.</li>
+            <li>Set their username, password, and explicitly define their <strong>Directory Scope</strong> (e.g., <code>/mnt/storage/alice_files</code>). If left blank, they will have access to the entire default file tree.</li>
+            <li>You can also toggle specific permissions for each user, such as allowing or denying them the ability to download, upload, delete, or rename files.</li>
+        </ul>
+
+        <h2>Sharing Files</h2>
+        <p>File Browser makes it easy to share files or folders without requiring the recipient to have an account.</p>
+        <ul>
+            <li>Navigate to the file or folder you want to share.</li>
+            <li>Click the <strong>Share</strong> icon (usually represented by a linking symbol) in the action bar at the top right.</li>
+            <li>Choose how long the link should be valid, or leave it blank for a permanent link.</li>
+            <li>Copy the generated URL and send it to your recipient.</li>
+        </ul>
+
+        <div class="callout callout-tip">
+            <span class="callout-title">Pro-Tip: Global Settings & Branding</span>
+            <p>You can customize the look and feel of your File Browser instance! Under <strong>Settings -> Global Settings</strong>, you can change the name of the application, disable user registration, and even upload a custom logo to replace the default branding. This is great for setting up a personalized family cloud.</p>
+        </div>
+    </div>
+</body>
+</html>

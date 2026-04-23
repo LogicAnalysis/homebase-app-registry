@@ -1,0 +1,46 @@
+{
+	"id": "file_browser",
+	"name": "File Browser",
+	"release": "v2.63.2",
+	"description": "Cloud file browser",
+	"port": 2980,
+	"composeURL": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/file_browser/docker-compose.yml",
+	"doc": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/file_browser/doc.html",
+	"initialized": false,
+	"scripts": {
+		"preInstall": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/file_browser/preInstall.sh"
+	},
+	"requirePreInstall": {
+		"title": "File Brwoser Setup",
+		"pages": [
+			{
+				"fields": [
+					{
+						"type": "username",
+						"name": "username",
+						"label": "Username",
+						"required": true,
+						"placeholder": "Enter a username..."
+					},
+					{
+						"type": "password",
+						"name": "password",
+						"label": "Password",
+						"required": true,
+						"placeholder": "Enter a password...",
+						"confirmPassword": true
+					}
+				]
+			},
+			{
+				"fields": [
+					{
+						"type": "warning",
+						"label": "Setting up a File Browser admin account",
+						"content": "File Browser will now be setup with your new account. Please ensure that your username and password are stored securely! Use those credentials to login on the next page."
+					}
+				]
+			}
+		]
+	}
+}
