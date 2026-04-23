@@ -1,10 +1,13 @@
 {
 	"id": "jellyfin",
 	"name": "Jellyfin",
-	"release": "10.11.8-b",
+	"release": "10.11.8-c",
 	"description": "View and manage your media library",
 	"port": 8096,
 	"composeURL": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/jellyfin/docker-compose.yml",
+	"scripts": {
+		"preInstall": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/jellyfin/preInstall.sh"
+	},
 	"doc": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/jellyfin/doc.html",
 	"initialized": false
 }

@@ -9,7 +9,7 @@ services:
       - ./config:/config
       - ./cache:/cache
       - type: bind
-        source: ./media
+        source: /app/data/apps/media
         target: /media
     restart: 'unless-stopped'
     # Optional - alternative address used for autodiscovery
