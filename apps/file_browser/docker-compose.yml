@@ -1,7 +1,7 @@
 ---
 services:
   filebrowser:
-    image: filebrowser/filebrowser
+    image: filebrowser/filebrowser:v2.63.2
     container_name: filebrowser
     env_file:
       - preInstallData.env
