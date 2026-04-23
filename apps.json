@@ -11,6 +11,7 @@
 		"storePage": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/adguard_home/store.html"
 	},
 	{
+		"minOS": 91,
 		"id": "file_browser",
 		"name": "File Browser",
 		"description": "Personal cloud file browser",
