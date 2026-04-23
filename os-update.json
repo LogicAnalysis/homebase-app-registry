@@ -1,6 +1,6 @@
 {
-  "buildSerial": "87",
-  "latestRelease": "0.8.7",
-  "bundleURL": "https://github.com/LogicAnalysis/homebase-app-registry/raw/refs/heads/main/updates/homebase-update-0.8.7.raucb",  
-  "releaseNotes": "- Added power system state options\n- General enhancements"
+  "buildSerial": "89",
+  "latestRelease": "0.8.9",
+  "bundleURL": "https://github.com/LogicAnalysis/homebase-app-registry/raw/refs/heads/main/updates/homebase-update-0.8.9.raucb",  
+  "releaseNotes": "- Improved OTA update reliability\n- General enhancements"
 }
