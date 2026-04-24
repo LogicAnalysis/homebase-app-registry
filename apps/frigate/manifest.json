@@ -5,6 +5,9 @@
 	"description": "Setup and manage home security cameras",
 	"port": 8971,
 	"composeURL": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/frigate/docker-compose.yml",
+	"extraFiles": [
+		"https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/frigate/config.yaml"
+	],
 	"scripts": {
 		"preInstall": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/frigate/preInstall.sh"
 	},
