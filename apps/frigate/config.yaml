@@ -7,5 +7,9 @@ tls:
   # Optional: Enable TLS for port 8971 (default: shown below)
   enabled: False
 cameras:
-  main:
-    enabled: False
+  fake_camera: # Fake camera to allow Frigate to start
+    ffmpeg:
+      inputs:
+        - path: "rtsp://fake-url"
+          roles:
+            - detect
