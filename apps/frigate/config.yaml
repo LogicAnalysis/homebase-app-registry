@@ -1,3 +1,11 @@
+auth:
+  enabled: False
+mqtt:
+  enabled: False
+  host: localhost
 tls:
   # Optional: Enable TLS for port 8971 (default: shown below)
   enabled: False
+cameras:
+  main:
+    enabled: False
