@@ -1,0 +1,3 @@
+tls:
+  # Optional: Enable TLS for port 8971 (default: shown below)
+  enabled: False

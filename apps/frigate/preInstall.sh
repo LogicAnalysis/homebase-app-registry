@@ -2,6 +2,11 @@
 
 set -e
 
+mkdir -p config
+mkdir -p storage
+
+mv config.yaml config/config.yaml
+
 COMPOSE_FILE="docker-compose.yml"
 JSON_FILE="preInstallData.json"
 

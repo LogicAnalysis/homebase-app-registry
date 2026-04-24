@@ -14,7 +14,7 @@
 		"preInstall": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/file_browser/preInstall.sh"
 	},
 	"requirePreInstall": {
-		"title": "File Brwoser Setup",
+		"title": "File Browser Setup",
 		"pages": [
 			{
 				"fields": [
