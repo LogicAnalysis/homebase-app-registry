@@ -1,6 +1,9 @@
 {
-  "buildSerial": "95",
-  "latestRelease": "0.9.5",
-  "bundleURL": "https://github.com/LogicAnalysis/homebase-app-registry/raw/refs/heads/main/updates/homebase-update-0.9.5.raucb",  
-  "releaseNotes": "- Fixed AP strict wifi interface name"
+  "alpha": {
+    "buildChannel": "alpha",
+    "buildSerial": "95",
+    "latestRelease": "0.9.5",
+    "bundleURL": "https://github.com/LogicAnalysis/homebase-app-registry/raw/refs/heads/main/updates/homebase-update-0.9.5.raucb",  
+    "releaseNotes": "- Fixed AP strict wifi interface name"
+  }
 }
