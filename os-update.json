@@ -1,6 +1,6 @@
 {
-  "buildSerial": "92",
-  "latestRelease": "0.9.2",
-  "bundleURL": "https://github.com/LogicAnalysis/homebase-app-registry/raw/refs/heads/main/updates/homebase-update-0.9.2.raucb",  
-  "releaseNotes": "- Minor update"
+  "buildSerial": "93",
+  "latestRelease": "0.9.3",
+  "bundleURL": "https://github.com/LogicAnalysis/homebase-app-registry/raw/refs/heads/main/updates/homebase-update-0.9.3.raucb",  
+  "releaseNotes": "- Initial access point/captive portal implementation"
 }
