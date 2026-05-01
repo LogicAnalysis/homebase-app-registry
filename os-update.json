@@ -1,6 +1,13 @@
 {
   "alpha": {
     "buildChannel": "alpha",
+    "buildSerial": "96",
+    "latestRelease": "0.9.6",
+    "bundleURL": "https://github.com/LogicAnalysis/homebase-app-registry/raw/refs/heads/main/updates/homebase-update-0.9.6-alpha.raucb",  
+    "releaseNotes": "- Fixed AP/container port conflict"
+  },
+  "beta": {
+    "buildChannel": "beta",
     "buildSerial": "95",
     "latestRelease": "0.9.5",
     "bundleURL": "https://github.com/LogicAnalysis/homebase-app-registry/raw/refs/heads/main/updates/homebase-update-0.9.5.raucb",  
