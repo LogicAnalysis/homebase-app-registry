@@ -2,6 +2,7 @@
 	"id": "jellyfin",
 	"name": "Jellyfin",
 	"release": "10.11.8-c",
+	"releaseSerial": 101183,
 	"description": "View and manage your media library",
 	"port": 8096,
 	"composeURL": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/jellyfin/docker-compose.yml",

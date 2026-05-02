@@ -2,6 +2,7 @@
 	"id": "file_browser",
 	"name": "File Browser",
 	"release": "1.3-stable",
+	"releaseSerial": 133,
 	"description": "Cloud file browser",
 	"port": 8900,
 	"composeURL": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/file_browser/docker-compose.yml",

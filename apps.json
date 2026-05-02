@@ -8,6 +8,7 @@
 		},
 		"manifest": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/adguard_home/manifest.json",
 		"currentRelease": "v0.107.73-b",
+		"currentReleaseSerial": 107733,
 		"storePage": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/adguard_home/store.html"
 	},
 	{
@@ -20,6 +21,7 @@
 		},
 		"manifest": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/file_browser/manifest.json",
 		"currentRelease": "1.3-stable",
+		"currentReleaseSerial": 133,
 		"storePage": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/file_browser/store.html"
 	},
 	{
@@ -32,6 +34,7 @@
 		},
 		"manifest": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/frigate/manifest.json",
 		"currentRelease": "0.17.1",
+		"currentReleaseSerial": 171,
 		"storePage": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/frigate/store.html"
 	},
 	{
@@ -43,6 +46,7 @@
 		},
 		"manifest": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/immich/manifest.json",
 		"currentRelease": "v2.7.2-b",
+		"currentReleaseSerial": 2722,
 		"storePage": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/immich/store.html"
 	},
 	{
@@ -54,6 +58,7 @@
 		},
 		"manifest": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/jellyfin/manifest.json",
 		"currentRelease": "10.11.8-c",
+		"currentReleaseSerial": 101183,
 		"storePage": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/jellyfin/store.html"
 	}
 ]
