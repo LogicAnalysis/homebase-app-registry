@@ -1,9 +1,9 @@
 {
   "alpha": {
     "buildChannel": "alpha",
-    "buildSerial": "98",
-    "latestRelease": "0.9.8",
-    "bundleURL": "https://github.com/LogicAnalysis/homebase-app-registry/raw/refs/heads/main/updates/homebase-update-0.9.8-alpha.raucb",  
+    "buildSerial": "99",
+    "latestRelease": "0.9.9",
+    "bundleURL": "https://github.com/LogicAnalysis/homebase-app-registry/raw/refs/heads/main/updates/homebase-update-0.9.9-alpha.raucb",  
     "releaseNotes": "- Fixed wifi pairing bug"
   },
   "beta": {
