@@ -1,9 +1,9 @@
 {
   "alpha": {
     "buildChannel": "alpha",
-    "buildSerial": "101",
-    "latestRelease": "1.0.1",
-    "bundleURL": "https://github.com/LogicAnalysis/homebase-app-registry/raw/refs/heads/main/updates/homebase-update-1.0.1-alpha.raucb",  
+    "buildSerial": "102",
+    "latestRelease": "1.0.2",
+    "bundleURL": "https://github.com/LogicAnalysis/homebase-app-registry/raw/refs/heads/main/updates/homebase-update-1.0.2-alpha.raucb",  
     "releaseNotes": "- Updated console\n- Allow OS hook installation",
     "appRestrictions": [
       {
