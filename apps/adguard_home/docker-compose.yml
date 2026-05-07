@@ -1,6 +1,6 @@
 services:
   adguardhome:
-    user: "${UID}:${GID}"
+    user: "${ENV_USER}:${ENV_GROUP}"
     image: adguard/adguardhome:v0.107.73
     container_name: adguardhome
     # network_mode: host
