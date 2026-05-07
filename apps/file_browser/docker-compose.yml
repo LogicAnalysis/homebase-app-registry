@@ -3,7 +3,7 @@ services:
   filebrowser:
     image: gtstef/filebrowser:1.3-stable
     container_name: filebrowser
-    user: "root:root"
+    user: "${UID}:${GID}"
     environment:
       - "FILEBROWSER_CONFIG=data/config.yaml"
     volumes:
