@@ -21,8 +21,8 @@
 			"main": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/file_browser/static/main-icon.svg"
 		},
 		"manifest": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/file_browser/manifest.json",
-		"currentRelease": "1.3-stable-c",
-		"currentReleaseSerial": 135,
+		"currentRelease": "1.3-stable-d",
+		"currentReleaseSerial": 136,
 		"storePage": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/file_browser/store.html"
 	},
 	{
