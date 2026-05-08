@@ -6,6 +6,7 @@
 	"description": "Cloud file browser",
 	"port": 8900,
 	"composeURL": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/file_browser/docker-compose.yml",
+	"confURL": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/file_browser/app.conf",
 	"doc": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/file_browser/doc.html",
 	"initialized": false,
 	"extraFiles": [

@@ -4,8 +4,6 @@ services:
     image: gtstef/filebrowser:1.3-stable
     container_name: filebrowser
     user: "${UID}:${GID}"
-    environment:
-      - "FILEBROWSER_CONFIG=data/config.yaml"
     volumes:
       - /app/data/apps/storage:/storage
       - /app/data/apps/media:/media
