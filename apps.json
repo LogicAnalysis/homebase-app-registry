@@ -26,7 +26,7 @@
 		"storePage": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/file_browser/store.html"
 	},
 	{
-		"minOS": 93,
+		"minOS": 103,
 		"id": "frigate",
 		"name": "Frigate",
 		"description": "Home camera security app",
@@ -34,8 +34,8 @@
 			"main": "https://raw.githubusercontent.com/blakeblackshear/frigate/refs/heads/dev/docs/static/img/branding/logo.svg"
 		},
 		"manifest": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/frigate/manifest.json",
-		"currentRelease": "0.17.1",
-		"currentReleaseSerial": 171,
+		"currentRelease": "0.17.1-b",
+		"currentReleaseSerial": 1712,
 		"storePage": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/frigate/store.html"
 	},
 	{

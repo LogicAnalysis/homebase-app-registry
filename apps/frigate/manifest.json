@@ -1,11 +1,13 @@
 {
 	"id": "frigate",
 	"name": "Frigate",
-	"release": "0.17.1",
-	"releaseSerial": 171,
+	"release": "0.17.1-b",
+	"releaseSerial": 1712,
 	"description": "Setup and manage home security cameras",
 	"port": 8971,
+	"portHTTPS": 8971,
 	"composeURL": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/frigate/docker-compose.yml",
+	"confURL": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/frigate/app.conf",
 	"extraFiles": [
 		"https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/frigate/config.yaml"
 	],
