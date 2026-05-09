@@ -1,12 +1,13 @@
 {
 	"id": "immich",
 	"name": "Immich",
-	"release": "v2.7.4-a",
-	"releaseSerial": 2741,
+	"release": "v2.7.4-b",
+	"releaseSerial": 2742,
 	"description": "View and manage your photo library",
 	"port": 2283,
 	"portHTTPS": 2283,
 	"composeURL": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/immich/docker-compose.yml",
+	"confURL": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/immich/app.conf",
 	"extraFiles": [
 		"https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/immich/hwaccel.ml.yml",
 		"https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/immich/hwaccel.transcoding.yml"

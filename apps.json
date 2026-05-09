@@ -46,8 +46,8 @@
 			"main": "https://raw.githubusercontent.com/immich-app/immich/refs/heads/main/design/immich-logo-stacked-light.svg"
 		},
 		"manifest": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/immich/manifest.json",
-		"currentRelease": "v2.7.4-a",
-		"currentReleaseSerial": 2741,
+		"currentRelease": "v2.7.4-b",
+		"currentReleaseSerial": 2742,
 		"storePage": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/immich/store.html"
 	},
 	{
@@ -58,8 +58,8 @@
 			"main": "https://raw.githubusercontent.com/jellyfin/jellyfin-ux/master/branding/SVG/icon-transparent.svg"
 		},
 		"manifest": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/jellyfin/manifest.json",
-		"currentRelease": "10.11.8-c",
-		"currentReleaseSerial": 101183,
+		"currentRelease": "10.11.8-d",
+		"currentReleaseSerial": 101184,
 		"storePage": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/jellyfin/store.html"
 	}
 ]
