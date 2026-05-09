@@ -11,4 +11,3 @@ if [ ! -d "$CONF_DIR" ]; then
 fi
 
 mv "$CONFIG_FILE" "$CONF_DIR/"
-

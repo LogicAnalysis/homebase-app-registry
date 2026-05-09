@@ -17,7 +17,7 @@ FB_PASS=$(jq -r '.password' preInstallData.json)
 sed -i "s|^[[:space:]]*adminUsername:.*|  adminUsername: ${FB_USER}|" "$CONFIG_FILE"
 sed -i "s|^[[:space:]]*adminPassword:.*|  adminPassword: ${FB_PASS}|" "$CONFIG_FILE"
 
-docker compose up -d
+manage-app install
 
 sleep 10
 
