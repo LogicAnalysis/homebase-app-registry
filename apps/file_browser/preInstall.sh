@@ -2,6 +2,10 @@
 
 set -e
 
+mkdir -p /app/data/apps/storage 
+chown storge:storge /app/data/apps/storage
+chmod 0700 /app/data/apps/storage
+
 CONFIG_FILE="data/config.yaml"
 
 mkdir -p data/tmp
