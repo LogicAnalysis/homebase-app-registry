@@ -1,8 +1,8 @@
 {
 	"id": "file_browser",
 	"name": "File Browser",
-	"release": "1.3-stable-d",
-	"releaseSerial": 136,
+	"release": "1.3-stable-e",
+	"releaseSerial": 137,
 	"description": "Cloud file browser",
 	"port": 8900,
 	"portHTTPS": 8900,
@@ -13,6 +13,9 @@
 	"extraFiles": [
 		"https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/file_browser/config.yaml"
 	],
+	"features": {
+		"storage": ["media", "storage"]
+	},
 	"scripts": {
 		"preInstall": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/file_browser/preInstall.sh"
 	},
