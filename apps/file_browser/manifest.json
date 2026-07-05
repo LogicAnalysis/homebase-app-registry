@@ -1,8 +1,8 @@
 {
 	"id": "file_browser",
 	"name": "File Browser",
-	"release": "1.3-stable-e",
-	"releaseSerial": 137,
+	"release": "1.4-stable",
+	"releaseSerial": 140,
 	"description": "Cloud file browser",
 	"port": 8900,
 	"portHTTPS": 8900,

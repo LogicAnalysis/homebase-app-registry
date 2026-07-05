@@ -1,7 +1,7 @@
 services:
   adguardhome:
     user: "${UID}:${GID}"
-    image: adguard/adguardhome:v0.107.73
+    image: adguard/adguardhome:v0.108.0-b.88
     container_name: adguardhome
     # network_mode: host
     restart: unless-stopped

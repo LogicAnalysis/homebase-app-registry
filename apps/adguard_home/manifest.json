@@ -1,8 +1,8 @@
 {
 	"id": "adguard_home",
 	"name": "Adguard Home",
-	"release": "v0.107.73-e",
-	"releaseSerial": 107735,
+	"release": "v0.108.0-b.88",
+	"releaseSerial": 1080288,
 	"description": "Network wide ad blocking/DNS management",
 	"port": 8081,
 	"portHTTPS": 8443,

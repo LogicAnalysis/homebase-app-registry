@@ -1,8 +1,8 @@
 {
 	"id": "immich",
 	"name": "Immich",
-	"release": "v2.7.4-b",
-	"releaseSerial": 2742,
+	"release": "v3.0.1",
+	"releaseSerial": 3010,
 	"description": "View and manage your photo library",
 	"port": 2283,
 	"portHTTPS": 2283,
