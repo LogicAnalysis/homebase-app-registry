@@ -26,7 +26,7 @@
 		"storePage": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/file_browser/store.html"
 	},
 	{
-		"minOS": 103,
+		"minOS": 200,
 		"id": "frigate",
 		"name": "Frigate",
 		"description": "Home camera security app",
