@@ -37,7 +37,17 @@
 						"label": "Password",
 						"required": true,
 						"placeholder": "Enter a password...",
-						"confirmPassword": true
+						"confirmPassword": true,
+						"rules": [
+							{
+								"min": 8,
+								"message": "Password must be at least 8 characters long."
+							},
+							{
+								"pattern": "^(?=.*[A-Za-z])(?=.*\\d).+$",
+								"message": "Password must contain at least one letter and one number."
+							}
+						]
 					}
 				]
 			},
