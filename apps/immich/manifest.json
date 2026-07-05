@@ -12,6 +12,9 @@
 		"https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/immich/hwaccel.ml.yml",
 		"https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/immich/hwaccel.transcoding.yml"
 	],
+	"features": {
+		"storage": ["media"]
+	},
 	"scripts": {
 		"preInit": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/immich/preInit.sh"
 	},

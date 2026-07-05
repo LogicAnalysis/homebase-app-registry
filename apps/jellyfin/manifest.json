@@ -4,6 +4,9 @@
 	"release": "10.11.8-d",
 	"releaseSerial": 101184,
 	"description": "View and manage your media library",
+	"features": {
+		"storage": ["media"]
+	},
 	"port": 8096,
 	"composeURL": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/jellyfin/docker-compose.yml",
 	"confURL": "https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/jellyfin/app.conf",
