@@ -59,5 +59,55 @@
 				]
 			}
 		]
-	}
+	},
+	"tools": [
+		{
+			"id": "immich-import-takeout",
+			"name": "Import Google Takeout",
+			"externalScripts": [
+				"https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/immich/utils/import-takeout/entrypoint.sh"
+			],
+			"preInit": {
+                "showSteps": true,
+                "pages": [
+                    {
+                        "step_title": "Locate Takeout Data",
+                        "fields": [
+                            {
+                                "type": "text",
+                                "name": "TAKEOUT_DIR",
+                                "label": "Takeout Directory Path",
+                                "required": true,
+                                "placeholder": "/mnt/sdb1/homebase_backups/0/immich/takeout"
+                            }
+                        ]
+                    },
+					{
+						"step_title": "Locate Takeout Data",
+						"fields": [
+							{
+								"type": "warning",
+								"label": "Get Immich API Key",
+								"content": "Open up Immich, Go to Account Settings, API Keys, and create a new key"
+							}
+						]
+					},
+                    {
+                        "step_title": "Authentication",
+                        "fields": [
+                            {
+                                "type": "text",
+                                "name": "API_KEY",
+                                "label": "Immich API Key",
+                                "required": true,
+                                "placeholder": "it_..."
+                            }
+                        ],
+                        "content": "You must generate an API key in the Immich web interface to assign these photos to a specific user."
+                    }
+                ]
+            },
+			"status": "/tmp/immich-import-takeout.status"
+		}
+	]
 }
