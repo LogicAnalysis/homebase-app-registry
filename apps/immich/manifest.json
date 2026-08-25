@@ -62,11 +62,13 @@
 	},
 	"tools": [
 		{
+			"appID": "immich",
 			"id": "immich-import-takeout",
 			"name": "Import Google Takeout",
 			"externalScripts": [
 				"https://raw.githubusercontent.com/LogicAnalysis/homebase-app-registry/refs/heads/main/apps/immich/utils/import-takeout/entrypoint.sh"
 			],
+			"initialized": false,
 			"preInit": {
                 "showSteps": true,
                 "pages": [
